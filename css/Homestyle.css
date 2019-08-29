@@ -1,0 +1,148 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-image: url("../visual/png/background.png");
+	background-size: cover;
+}
+nav {
+	background-color: white;
+	width: 100%;
+	height: 76px;
+	line-height: 30px;
+}
+nav img {
+	float: left;
+}
+nav ul {
+	float: left;
+}
+nav ul li {
+	float: left;
+	list-style: none;
+	padding: 20px 50px;
+	position: relative;
+}
+nav ul li ul {
+	border: 0px;
+	position: absolute;
+	display: none;
+	font-size: 20px;
+	background-color: #fff;
+}
+nav ul li:hover ul {
+	display: block;
+	background-color: white;
+	margin-top: 25px;
+}
+nav ul li ul li a:hover {
+	padding: 25px 81%;
+	left: -50px;
+	margin-right: 30px;
+	background-color: #eee;
+}
+nav ul li ul li {
+	width: 100px;
+}
+nav ul li:hover ul li ul {
+	display: none;
+}
+nav ul li ul li:hover ul {
+	display: block;
+	background-color: #eee;
+	margin-left: 150px;
+	margin-top: -50px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+nav ul li ul li a {
+	padding: 10px 30px;
+	position: relative;
+}
+nav ul li ul li ul li a:hover {
+	text-align: right;
+	position: initial;
+	background-color: #ddd;
+	padding: 10px 30px;
+	width: 100%;
+	right: 50px;
+}
+.Search {
+	width: 300px;
+	height: 35px;
+	font-size: 20px;
+	font-family: cursive;
+}
+.btn {
+	width: 50px;
+	height: 35px;
+	top: -3.5px;
+	position: relative;
+}
+/*popup test*/
+/*popup container*/
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+/*the popup*/
+.popup .popuptext {
+	visibility: hidden;
+	width: 400px;
+	background-color: #385287;
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px 10px 20px 10px;
+	;
+	position: absolute;
+	z-index: 1;
+	/*bottom: 125%;
+	left: 50%;*/
+	margin: 100px;
+}
+.popup .popuptext .popuptextreal {
+	color: white;
+	border: 5px solid #000;
+	background-color: #4EC1C8;
+}
+/*popup arrow*/
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+/*hide and show*/
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+/*animation*/
+@-webkit-keyframes fadeIn {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+@keyframes fadeIn {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+b {
+	color: white;
+}

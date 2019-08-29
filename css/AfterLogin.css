@@ -1,0 +1,164 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-image: url("../visual/png/background.png");
+	background-size: cover;
+}
+nav {
+	background-color: white;
+	width: 100%;
+	height: 76px;
+	line-height: 30px;
+}
+nav img {
+	float: left;
+}
+nav ul {
+	float: left;
+}
+nav ul li {
+	float: left;
+	list-style: none;
+	padding: 20px 50px;
+	position: relative;
+}
+nav ul li ul {
+	border: 0px;
+	position: absolute;
+	display: none;
+	font-size: 20px;
+	background-color: #fff;
+}
+nav ul li:hover ul {
+	display: block;
+	background-color: white;
+	margin-top: 25px;
+}
+nav ul li ul li a:hover {
+	padding: 25px 81%;
+	left: -50px;
+	margin-right: 30px;
+	background-color: #eee;
+}
+nav ul li ul li {
+	width: 100px;
+}
+nav ul li:hover ul li ul {
+	display: none;
+}
+nav ul li ul li:hover ul {
+	display: block;
+	background-color: #eee;
+	margin-left: 150px;
+	margin-top: -50px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+nav ul li ul li a {
+	padding: 10px 30px;
+	position: relative;
+}
+nav ul li ul li ul li a:hover {
+	text-align: right;
+	position: initial;
+	background-color: #ddd;
+	padding: 10px 30px;
+	width: 100%;
+	right: 50px;
+}
+.Search {
+	width: 220px;
+	height: 35px;
+	font-size: 20px;
+	font-family: cursive;
+}
+.btn {
+	width: 50px;
+	height: 35px;
+	top: -3.5px;
+	position: relative;
+}
+
+#qdash{
+	
+	color: white;
+	
+}
+
+/*qna*/
+
+.question {
+	float: left;
+	margin: 10px 400px;
+	width: 750px;
+	background-color: #FFF;
+	font-size: 18px;
+	border-width: thick 5px #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+.ques{
+	text-decoration: none;
+	font-size: 28px;
+	color: black;
+}
+.delete{
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	background-color: indianred;
+	border-radius: 5px;
+}
+#pro{
+  position: fixed;
+  top: 50px;
+  left:87%;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+  
+}
+#pro li{
+  position: relative;
+  
+  padding: 0;
+  width: 100px;
+}
+
+#pro li:hover{
+  padding: 10px;
+ width:180px;
+ height: 30px;
+ 
+}
+
+#pro li a{
+  padding: 10px;
+  left: 25px;
+  width: 180px;
+  
+
+}
+
+
+#pro li:hover a{
+  left: 0px;
+  top: -10px;
+ width: 150px;
+  padding: 0px;
+}
+
+#pro:hover li a{
+  left: 30px;
+  
+  padding: 10px;
+  width: 150px;
+  position: inherit;
+ background-color: #eee;
+}

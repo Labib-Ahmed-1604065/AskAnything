@@ -1,0 +1,12 @@
+* {
+	padding: 10px 5px 0px 5px;
+	margin: 10px;
+	color: #fff;
+}
+body {
+	background-image: url("../visual/png/background.png");
+	background-size: cover;
+}
+#submit {
+	color: #000;
+}

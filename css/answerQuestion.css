@@ -1,0 +1,17 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-image: url("../visual/png/background.png");
+	background-size: cover;
+}
+h3{
+	color: white;
+	font-size: 36px;
+}
+.ansQ{
+	margin-left: 425px;
+	border: thin 5px;
+	border-radius: 5%;
+}

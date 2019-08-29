@@ -1,0 +1,15 @@
+.question {
+	float: left;
+	margin: 10px 400px;
+	width: 750px;
+	background-color: #FFF;
+	font-size: 18px;
+	border-width: thick 5px #fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+.ques{
+	text-decoration: none;
+	font-size: 28px;
+	color: black;
+}

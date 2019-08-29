@@ -1,0 +1,13 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background-image: url("../visual/png/background.png");
+  background-size: cover;
+}
+
+label{
+	color: white;
+}
