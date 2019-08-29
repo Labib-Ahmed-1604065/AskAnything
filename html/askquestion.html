@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>AskAnything</title>
+	<link rel="stylesheet" href="askquestion.css">
+    <link rel="shortcut icon" href="askanythingicon.ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+	<nav>
+    <!--icon--><img src="askanythinglogo.png" style="width:150px;height:60px"><!--icon-->
+    <ul>
+      <li>
+        <form action="#">
+          <input class="Search" type="search" placeholder="Search...">
+          <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </li>
+	  <li><a href="afterlogin.php">Dashboad</a></li>
+      <li><a href="group.php">Find Group</a></li>
+      <li><a href="#">Test You Limit</a>
+        <ul>
+          <li><a href="">sub1</a>
+            <ul>
+              <li><a href="">Practice</a></li>
+               <li><a href="">Test</a></li>
+              </ul>
+          </li>
+          <li><a href="">sub2</a>
+          <ul>
+              <li><a href="">Practice</a></li>
+                <li><a href="">Test</a></li>
+          </ul>
+		  </li>
+          <li><a href="">sub3</a>
+          <ul>
+              <li><a href="">Practice</a></li>
+                <li><a href="">Test</a></li>
+          </ul>
+		  </li>
+        </ul>
+      </li>
+      <li class="login" ><a href="AskAnything.html"><img src="round-account-button-with-user-inside.svg" alt="Login/Signup" style="width:50px;height:50px;margin-left: 150px; margin-top:-10px;"></a></li>
+    </ul>
+  </nav>
+	
+	<h2>Ask Your Question</h2>
+	<p class="rules"><big>Ask any relevant question. Correctly fillup group names and category. Follow Group Rules. Hateful speech and illegal behaviors are strictly prohibited.</big></p>
+	<form class="question" action="#">
+		<p>Choose Group</p>
+		<select>
+			<option>Android Mania</option>
+			<option>Spaceship and Aliens</option>
+		</select>
+		<p>Choose Category</p>
+		<select>
+			<option>IT</option>
+			<option>Sci-Fi</option>
+		</select>
+		<p>Ask a question. (Highest 500 characters)</p>
+		<textarea rows="10" cols="50" ></textarea>
+		<br>
+		<input type="submit" value="Post">
+	</form>
+</body>
+</html>

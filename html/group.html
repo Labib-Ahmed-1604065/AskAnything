@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AskAnything</title>
+	<!--style-->
+	<link rel="stylesheet" href="group.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="shortcut icon" href="askanythingicon.ico" />
+	<!--style-->
+</head>
+<body>
+<div class="joingroup">	
+	<p>Join Group</p>
+	<table border="5px;">
+	
+		<tr><th>Group Name</th><th>Category</th><th>Number of Members</th><th></th></tr>
+	<?php
+		
+		include('connection.php');
+		
+		$query="SELECT * FROM groups";
+		$data=mysqli_query($con,$query);
+		
+		while($row=mysqli_fetch_array($data, MYSQLI_ASSOC))
+		{
+		echo "<tr><td>";
+		echo $row['Name'];
+		echo "</td><td>";
+		echo $row['Category'];
+		echo "</td><td>";
+		echo $row['Member'];
+		
+		echo"</td><td>JOIN</td></tr>";
+		
+		
+		}
+	//<tr><td>Android Mania</td><td>IT</td><td>15</td><td>JOIN</td></tr>
+		//<tr><td>Cooking Fever</td><td>Cooking</td><td>2</td><td>JOIN</td></tr>
+		//<tr><td>Tom and Jerry</td><td>Cartoon</td><td>100</td><td>JOIN</td></tr>
+		//<tr><td>Spaceship and Aliens</td><td>Sci-Fi</td><td>123</td><td>JOIN</td></tr>
+	
+	?>
+	</table>
+</div>
+<br><br>
+<a href="creategroup.html">Create Group</a>
+</body>
+</html>

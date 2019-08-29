@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN or SIGNUP</title>
+<link rel="stylesheet" href="loginsignup.css">
+<link rel="shortcut icon" href="askanythingicon.ico" />
+</head>
+<body>
+<div class="login-signup-with-buttons"> 
+	<a href="#" onclick="showSign()" id="signButton">Signup</a> 
+	<a href="#" onclick="showLog()" id="logButton">Login</a> <br>
+  <br>
+  <div class="wholething">
+    <div id="sign" class="signup">
+      <form method="post" action="signup.php">
+        <b>Name:</b> <br>
+        <input type="text" name="Name" placeholder="enter your name">
+        <br>
+        <b>E-mail:</b> <br>
+        <input type="email" name="Email" placeholder="enter your email">
+        <br>
+        <b>Password:</b> <br>
+        <input type="password" name="Password" placeholder="enter your password">
+        <br>
+        <b>Retype password:</b> <br>
+        <input type="password" name="MatchPassword" placeholder="enter your password again">
+        <br>
+        <input type="submit" name="Signup">
+        <br>
+      </form>
+    </div>
+    <div id="log" class="login">
+      <form method="post" action="login.php">
+        <b>Username:</b> <br>
+        <input type="text" name="Name" placeholder="enter your username">
+        <br>
+        <b>Password:</b> <br>
+        <input type="password" name="Password" placeholder="enter your password">
+        <br>
+        <input type="submit" name="Login">
+        <br>
+      </form>
+    </div>
+  </div>
+  <script src="loginsignup.js"></script> 
+</div>
+</body>
+</html>
